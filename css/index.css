@@ -1,0 +1,199 @@
+@import url("../fonts/Lexend-VariableFont_wght.ttf");
+
+:root {
+    --bg-color:             #121212;
+    --main-pink:            #9929ea;
+    --main-purple:          #5808fb;
+    
+    --normal-brightness:    #ffffff81;
+    --normal-shadow:        #00000079;
+}
+
+
+
+/*/////////////////////////////////////////////////*/
+/*/////////////////////////////////////////////////*/
+
+/* MAIN HTML */
+
+* {
+    padding: 0px auto;
+    margin: 0px auto;
+}
+
+body {
+    height: 100vh;
+    width: 100vw;
+
+    overflow-x: hidden;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+
+
+/*/////////////////////////////////////////////////*/
+/*/////////////////////////////////////////////////*/
+
+/* HEADER */
+
+.gy-header {
+    background-image: url(../img/gy-header.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    min-width: 100%;
+    height: 245px;
+    z-index: 2;
+    position: relative;
+    filter: drop-shadow(0px 10px 10px var(--normal-shadow));
+    display: flex;
+    flex-direction: row;
+}
+
+.left-box-list {
+    display: flex;
+    color: white;
+    width: 50%;
+    height: 35%;
+    align-items: center;
+    padding: 0;
+    margin-left: 2%;
+}
+
+.right-box-list {
+    display: flex;
+    color: white;
+    width: 50%;
+    height: 35%;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 0;
+    gap: 5rem;
+    margin-right: 2%;
+}
+
+.left-list {
+    width: 100%;
+    list-style: none;
+
+    transition: .5s;
+}
+
+.right-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+
+    transition: .5s;
+}
+
+.left-list:hover, .right-list:hover {
+    cursor: pointer;
+    transition: .5s;
+    
+    /*TODO. Hover */
+}
+
+.list-text {
+    font-size: 20px;
+    font-family: 'Lexend';
+    font-weight: bold;
+    letter-spacing: 1px;
+
+    background: #ccc;
+	background: linear-gradient(0deg, var(--main-purple), var(--main-pink));
+	-webkit-text-fill-color: transparent;
+	-webkit-background-clip: text;
+}
+
+
+
+/*/////////////////////////////////////////////////*/
+/*/////////////////////////////////////////////////*/
+
+/* BACKGROUND */
+
+.bground {
+    position: absolute;
+
+    width: 100%;
+    height: 100%;
+    
+    filter: brightness(40%);
+
+    top: 0%;
+
+    z-index: 0;
+}
+.bground img {
+    width: 100%;
+    height: 100%;
+}
+
+
+
+/*/////////////////////////////////////////////////*/
+/*/////////////////////////////////////////////////*/
+
+/* ANNOUNCEMENTS-BOX */
+
+.announcements-box {
+    width: 100%;
+    z-index: 2;
+    height: 50%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    margin-top: 1%;
+}
+
+.announcements-logo {
+    height: 60%;
+    filter: brightness(20);
+}
+
+.announcements-button{
+    width: 150px;
+    height: 50px;
+	background: linear-gradient(0deg, var(--main-purple), var(--main-pink));
+    font-weight: bold;
+    font-family: 'Lexend';
+    color: white;
+    border-radius: 6px;
+
+    transition: .5s;
+}
+
+.announcements-button:hover {
+    cursor: pointer;
+    
+    transition: .5s;
+}
+
+.announcements-ver{
+    color: white;
+    font-family: 'Lexend';
+}
+/*/////////////////////////////////////////////////*/
+/*/////////////////////////////////////////////////*/
+
+/* FOOTER */
+
+.gy-divider-1{
+    position: absolute;
+    width: 100%;
+    margin-top: 2%;
+}
+.gy-divider-1 img{
+    width: 100%;
+}
+
+
+
+
