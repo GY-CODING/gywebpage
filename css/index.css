@@ -122,12 +122,13 @@ body {
     width: 100%;
     height: 100%;
     
-    filter: brightness(40%);
+    filter: brightness(30%);
 
     top: 0%;
 
     z-index: 0;
 }
+
 .bground img {
     width: 100%;
     height: 100%;
@@ -155,7 +156,7 @@ body {
 
 .announcements-logo {
     height: 60%;
-    filter: brightness(20);
+    filter: brightness(20) drop-shadow(0px 0px 10px #ffffff75);
 }
 
 .announcements-button{
