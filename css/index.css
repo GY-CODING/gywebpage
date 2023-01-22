@@ -2,6 +2,7 @@
 
 :root {
     --bg-color:             #0a0a0a;
+    --footer-bg-color:      #1c1c1c;
     --main-pink:            #9929ea;
     --main-purple:          #5808fb;
     
@@ -212,13 +213,14 @@ body {
 /*/////////////////////////////////////////////////*/
 /*/////////////////////////////////////////////////*/
 
-/*/=====> DIVIDER <=====/*/
+/*/=====> DIVIDER 1 <=====/*/
 
 .gy-divider-1 {
     position: absolute;
     width: 100%;
     margin-top: -1%;
 }
+
 .gy-divider-1 img {
     width: 100%;
 }
@@ -246,3 +248,92 @@ body {
 }
 
 
+
+/*/////////////////////////////////////////////////*/
+/*/////////////////////////////////////////////////*/
+
+/*/=====> DIVIDER 2 <=====/*/
+
+.gy-divider-2 {
+    position: absolute;
+    width: 100%;
+    margin-top: -10%;
+}
+
+.gy-divider-2 img {
+    width: 100%;
+}
+
+
+
+/*/////////////////////////////////////////////////*/
+/*/////////////////////////////////////////////////*/
+
+/*/=====> FOOTER <=====/*/
+
+.end-page {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+
+    justify-content: flex-end;
+    align-items: center;
+    align-content: center;
+
+    width: 100%;
+    height: 500px;
+
+    background: var(--footer-bg-color);
+}
+
+.media-box {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+
+    width: 100%;
+    height: 20%;
+}
+
+.media-element {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+
+    width: 60px;
+    height: 60px;
+
+    background-color: #fff;
+    border-radius: 6px;
+}
+
+.media-img {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+
+    width: 100%;
+    height: 100%;
+}
+
+.copyright-txt {
+    color: #ffffff77;
+
+    font-family: 'Lexend';
+    font-weight: 100;
+    font-size: 15px;
+
+    pointer-events: none;
+}
