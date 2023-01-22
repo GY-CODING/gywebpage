@@ -1,7 +1,7 @@
 @import url("../fonts/Lexend-VariableFont_wght.ttf");
 
 :root {
-    --bg-color:             #121212;
+    --bg-color:             #0a0a0a;
     --main-pink:            #9929ea;
     --main-purple:          #5808fb;
     
@@ -14,7 +14,7 @@
 /*/////////////////////////////////////////////////*/
 /*/////////////////////////////////////////////////*/
 
-/* MAIN HTML */
+/*/=====> MAIN HTML <=====/*/
 
 * {
     padding: 0px auto;
@@ -37,7 +37,7 @@ body {
 /*/////////////////////////////////////////////////*/
 /*/////////////////////////////////////////////////*/
 
-/* HEADER */
+/*/=====> HEADER <=====/*/
 
 .gy-header {
     background-image: url(../img/gy-header.png);
@@ -114,7 +114,7 @@ body {
 /*/////////////////////////////////////////////////*/
 /*/////////////////////////////////////////////////*/
 
-/* BACKGROUND */
+/*/=====> ANNOUNCEMENTS BG <=====/*/
 
 .bground {
     position: absolute;
@@ -139,19 +139,25 @@ body {
 /*/////////////////////////////////////////////////*/
 /*/////////////////////////////////////////////////*/
 
-/* ANNOUNCEMENTS-BOX */
+/*/=====> ANNOUNCEMENTS BOX <=====/*/
 
 .announcements-box {
+    position: relative;
+
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+
     width: 100%;
     z-index: 2;
     height: 50%;
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    
     gap: 2rem;
-    margin-top: 1%;
+    margin-top: 3%;
 }
 
 .announcements-logo {
@@ -159,7 +165,7 @@ body {
     filter: brightness(20) drop-shadow(0px 0px 10px #ffffff75);
 }
 
-.announcements-button{
+.announcements-button {
     width: 150px;
     height: 50px;
 	background: linear-gradient(0deg, var(--main-purple), var(--main-pink));
@@ -175,26 +181,68 @@ body {
     cursor: pointer;
     
     transition: .5s;
+
+    /* TODO. Hover */
 }
 
-.announcements-ver{
+.announcements-develop {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+
+    justify-content: flex-start;
+    align-items: center;
+    align-content: center;
+
+    width: 100%;
+    height: 20%;
+
+    gap: 5%;
+}
+
+.announcements-ver {
     color: white;
+
+    font-size: 12px;
     font-family: 'Lexend';
 }
+
+
+
 /*/////////////////////////////////////////////////*/
 /*/////////////////////////////////////////////////*/
 
-/* FOOTER */
+/*/=====> DIVIDER <=====/*/
 
-.gy-divider-1{
+.gy-divider-1 {
     position: absolute;
     width: 100%;
-    margin-top: 2%;
+    margin-top: -1%;
 }
-.gy-divider-1 img{
+.gy-divider-1 img {
     width: 100%;
 }
 
 
+
+/*/////////////////////////////////////////////////*/
+/*/////////////////////////////////////////////////*/
+
+/*/=====> MAIN PAGE <=====/*/
+
+.main-page {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+
+    justify-content: flex-start;
+    align-items: center;
+    align-content: center;
+
+    width: 100%;
+    height: 2000px;
+
+    background: var(--bg-color);
+}
 
 
