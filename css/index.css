@@ -6,7 +6,7 @@
     --main-pink:            #9929ea;
     --main-purple:          #5808fb;
     
-    --normal-brightness:    #ffffff81;
+    --normal-brightness:    #ffffff57;
     --normal-shadow:        #00000079;
 }
 
@@ -169,10 +169,11 @@ body {
 .announcements-button {
     width: 150px;
     height: 50px;
-	background: linear-gradient(0deg, var(--main-purple), var(--main-pink));
+	background: var(--bg-color);
     font-weight: bold;
     font-family: 'Lexend';
     color: white;
+    border: 2px solid var(--main-pink);
     border-radius: 6px;
 
     transition: .5s;
@@ -182,6 +183,8 @@ body {
     cursor: pointer;
     
     transition: .5s;
+
+    filter: drop-shadow(0px 0px 10px var(--main-pink));
 
     /* TODO. Hover */
 }
@@ -219,10 +222,14 @@ body {
     position: absolute;
     width: 100%;
     margin-top: -1%;
+
+    z-index: 2;
 }
 
 .gy-divider-1 img {
     width: 100%;
+
+    filter: drop-shadow(0px 0px 10px var(--normal-shadow));
 }
 
 
@@ -311,7 +318,6 @@ body {
     width: 60px;
     height: 60px;
 
-    background-color: #fff;
     border-radius: 6px;
 }
 
@@ -326,6 +332,16 @@ body {
 
     width: 100%;
     height: 100%;
+
+    transition: .5s;
+}
+
+.media-img:hover {
+    cursor: pointer;
+
+    transition: .5s;
+
+    filter: drop-shadow(0px 0px 10px var(--normal-brightness));
 }
 
 .copyright-txt {
@@ -334,6 +350,8 @@ body {
     font-family: 'Lexend';
     font-weight: 100;
     font-size: 15px;
+
+    margin-bottom: 1.5%;
 
     pointer-events: none;
 }
