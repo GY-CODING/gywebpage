@@ -132,7 +132,7 @@ body {
 
 .bground img {
     width: 100%;
-    height: 100%;
+    height: 118%;
 }
 
 
@@ -221,7 +221,7 @@ body {
 .gy-divider-1 {
     position: absolute;
     width: 100%;
-    margin-top: -1%;
+    top: 102vh;
 
     z-index: 2;
 }
@@ -251,7 +251,28 @@ body {
     width: 100%;
     height: 2000px;
 
+    margin-top: 15%;
+
     background: var(--bg-color);
+}
+
+.main-page-head {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+
+    width: 100%;
+    height: 20%;
+}
+
+.main-page-title {
+    height: 15%;
+
+    z-index: 3;
 }
 
 
